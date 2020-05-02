@@ -1,0 +1,54 @@
+# SEGGER J-Link RTT Viewer V6.54c Terminal Log File
+# Compiled: 17:03:07 on Nov  7 2019
+# Logging started @ 24 Mar 2020 11:07:15
+
+  <   < 
+00> *** Booting Zephyr OS build v2.1.99-ncs1  ***
+00> The AT host sample started
+00> *** Booting Zephyr OS build v2.1.99-ncs1  ***
+00> DT Sensor application example started
+00> DEV_DBG: Initalizing buttons and leds.
+00> LTE Link Connecting ...
+00> LTE Link Connected!
+00> IPv4 Address found 137.135.83.217
+00> [mqtt_evt_handler:196] MQTT client connected!
+00> Subscribing to: /nrf91/subscribe/topic len 22
+00> [mqtt_evt_handler:251] SUBACK packet id: 1234
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 26468
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 48885
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 22622
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 4196
+00> *** Booting Zephyr OS build v2.1.99-ncs1  ***
+00> DT Sensor application example started
+00> DEV_DBG: Initalizing buttons and leds.
+00> LTE Link Connecting ...
+00> LTE Link Connected!
+00> IPv4 Address found 137.135.83.217
+00> [mqtt_evt_handler:196] MQTT client connected!
+00> Subscribing to: /nrf91/subscribe/topic len 22
+00> [mqtt_evt_handler:251] SUBACK packet id: 1234
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 24771
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 58931
+00> DEV_DBG: button 1 pressed
+00> Publishing: touch
+00> to topic: /nrf91/publish/touch len: 20
+00> [mqtt_evt_handler:241] PUBACK packet id: 11589
+# Logging stopped @ 24 Mar 2020 18:22:24
