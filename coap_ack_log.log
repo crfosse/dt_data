@@ -1,0 +1,157 @@
+2020-05-28T16:43:26.698Z INFO Application data folder: /Users/crfosse/Library/Application Support/nrfconnect/pc-nrfconnect-linkmonitor
+2020-05-28T16:43:26.913Z DEBUG App pc-nrfconnect-linkmonitor v1.1.1 official
+2020-05-28T16:43:26.913Z DEBUG App path: /Users/crfosse/.nrfconnect-apps/node_modules/pc-nrfconnect-linkmonitor
+2020-05-28T16:43:26.913Z DEBUG nRFConnect 3.3.3 is supported by the app (^3.2.0)
+2020-05-28T16:43:26.913Z DEBUG nRFConnect path: /Applications/nRF Connect.app/Contents/Resources/app.asar
+2020-05-28T16:43:26.913Z DEBUG HomeDir: /Users/crfosse
+2020-05-28T16:43:26.913Z DEBUG TmpDir: /var/folders/50/78_rmhq53_s_r6d7bl0x45bw0000gq/T/
+2020-05-28T16:43:26.915Z VERBOSE Could not fetch serial number for serial port at /dev/tty.usbmodem1432401
+2020-05-28T16:43:26.915Z VERBOSE Could not fetch serial number for serial port at /dev/tty.Bluetooth-Incoming-Port
+2020-05-28T16:43:30.521Z INFO Modem port is opened
+2020-05-28T16:43:30.526Z DEBUG modem >> AT+CFUN?\x0D\x0A
+2020-05-28T16:43:32.128Z INFO Modem port is closed
+2020-05-28T16:43:32.136Z INFO Modem port is opened
+2020-05-28T16:43:32.139Z DEBUG modem >> AT+CFUN?\x0D\x0A
+2020-05-28T16:43:35.726Z INFO Modem port is closed
+2020-05-28T16:43:35.733Z INFO Modem port is opened
+2020-05-28T16:43:35.736Z DEBUG modem >> AT+CFUN?\x0D\x0A
+2020-05-28T16:43:41.466Z DEBUG modem << *** Booting Zephyr OS build v2.1.99-ncs1  ***\x0D
+2020-05-28T16:43:41.471Z DEBUG modem << PSM bits: 001\x0D\x0A
+2020-05-28T16:43:41.474Z DEBUG modem << PSM Interval: 00010\x0D\x0A
+2020-05-28T16:43:42.473Z DEBUG modem << [00:00:00.321,319] \x1B[0m<inf> app_main: CoAP sample application started\x1B[0m\x0D
+2020-05-28T16:43:42.518Z DEBUG modem << [00:00:00.321,319] \x1B[0m<inf> app_main: DEV_DBG: Initalizing buttons and leds.\x0A
+2020-05-28T16:43:42.519Z DEBUG modem << \x1B[0m\x0D\x0A
+2020-05-28T16:43:42.520Z DEBUG modem << [00:00:00.325,195] \x1B[0m<inf> app_main: LTE Link Connecting ...\x0A
+2020-05-28T16:43:42.521Z DEBUG modem << \x1B[0m\x0D\x0A
+2020-05-28T16:43:42.522Z DEBUG modem << [00:00:00.327,880] \x1B[0m<inf> lte_lc: PDP Context: AT+CGDCONT=0,"IP","mda.ee"\x1B[0m\x0D\x0A
+2020-05-28T16:43:45.841Z DEBUG modem << +CEREG: 2,"9DD1","010FA867",9,0,0,"11100000","11100000"\x0D
+2020-05-28T16:43:53.884Z DEBUG modem << +CEREG: 1,"9DD1","010FA867",9,,,"00000000","00001100"\x0D\x0A
+2020-05-28T16:43:53.894Z DEBUG modem >> AT+COPS=3,2\x0D\x0A
+2020-05-28T16:43:53.898Z DEBUG modem << OK\x0D\x0A
+2020-05-28T16:43:53.902Z DEBUG modem >> AT+COPS?\x0D\x0A
+2020-05-28T16:43:53.909Z DEBUG modem << +COPS: 0,2,"24201",9\x0D\x0A
+2020-05-28T16:43:53.912Z DEBUG modem << OK\x0D\x0A
+2020-05-28T16:43:53.925Z DEBUG modem >> AT%XCBAND\x0D\x0A
+2020-05-28T16:43:53.929Z DEBUG modem << %XCBAND: 20\x0D
+2020-05-28T16:43:53.932Z DEBUG modem << \x0A
+2020-05-28T16:43:53.933Z DEBUG modem << OK\x0D\x0A
+2020-05-28T16:43:53.945Z DEBUG modem >> AT+CGDCONT?\x0D\x0A
+2020-05-28T16:43:53.953Z DEBUG modem << +CGDCONT: 0,"IP","mda.ee","10.8.1.198",0,0\x0D
+2020-05-28T16:43:53.955Z DEBUG modem << \x0A
+2020-05-28T16:43:53.957Z DEBUG modem << OK\x0D\x0A
+2020-05-28T16:43:53.963Z DEBUG modem >> AT+CGACT?\x0D\x0A
+2020-05-28T16:43:53.969Z DEBUG modem << +CGACT: 0,1\x0D\x0A
+2020-05-28T16:43:53.972Z DEBUG modem << OK\x0D\x0A
+2020-05-28T16:43:54.888Z DEBUG modem << [00:00:12.738,433] \x1B[0m<inf> app_main: LTE Link Connected!\x0A
+2020-05-28T16:43:54.893Z DEBUG modem << \x1B[0m\x0D\x0A
+2020-05-28T16:43:54.896Z DEBUG modem << [00:00:12.740,875] \x1B[0m<inf> app_main: Reqested: TAU = 00100010 | AT = 00000000\x1B[0m\x0D
+2020-05-28T16:43:54.903Z DEBUG modem << [00:00:12.740,905] \x1B[0m<inf> app_main: Got: TAU = 7200 | AT = 0\x1B[0m\x0D\x0A
+2020-05-28T16:44:24.890Z DEBUG modem << [00:00:42.740,997] \x1B[0m<inf> app_main: Current test_index: 0\x1B[0m\x0D
+2020-05-28T16:44:24.898Z DEBUG modem << [00:00:42.750,030] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:44:29.909Z DEBUG modem << [00:00:47.758,789] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:44:59.907Z DEBUG modem << [00:01:17.758,972] \x1B[0m<inf> app_main: Current test_index: 41\x1B[0m\x0D\x0A
+2020-05-28T16:44:59.915Z DEBUG modem << [00:01:17.767,974] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:45:06.082Z DEBUG modem << [00:01:23.932,983] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:45:36.080Z DEBUG modem << [00:01:53.933,135] \x1B[0m<inf> app_main: Current test_index: 82\x1B[0m\x0D
+2020-05-28T16:45:36.088Z DEBUG modem << [00:01:53.942,138] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:45:42.334Z DEBUG modem << [00:02:00.186,859] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:46:12.333Z DEBUG modem << [00:02:30.187,042] \x1B[0m<inf> app_main: Current test_index: 123\x1B[0m\x0D
+2020-05-28T16:46:12.341Z DEBUG modem << [00:02:30.196,044] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:46:17.494Z DEBUG modem << [00:02:35.346,893] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T16:46:47.492Z DEBUG modem << [00:03:05.347,076] \x1B[0m<inf> app_main: Current test_index: 164\x1B[0m\x0D\x0A
+2020-05-28T16:46:47.500Z DEBUG modem << [00:03:05.356,109] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:46:52.693Z DEBUG modem << [00:03:10.547,851] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:47:22.692Z DEBUG modem << [00:03:40.548,034] \x1B[0m<inf> app_main: Current test_index: 205\x1B[0m\x0D
+2020-05-28T16:47:22.700Z DEBUG modem << [00:03:40.557,098] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:47:29.871Z DEBUG modem << [00:03:47.726,898] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:47:59.870Z DEBUG modem << [00:04:17.727,081] \x1B[0m<inf> app_main: Current test_index: 246\x1B[0m\x0D
+2020-05-28T16:47:59.879Z DEBUG modem << [00:04:17.736,145] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D\x0A
+2020-05-28T16:48:05.872Z DEBUG modem << [00:04:23.728,942] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:48:35.871Z DEBUG modem << [00:04:53.729,125] \x1B[0m<inf> app_main: Current test_index: 287\x1B[0m\x0D
+2020-05-28T16:48:35.879Z DEBUG modem << [00:04:53.738,250] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D\x0A
+2020-05-28T16:48:42.168Z DEBUG modem << [00:05:00.024,993] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T16:49:12.166Z DEBUG modem << [00:05:30.025,146] \x1B[0m<inf> app_main: Current test_index: 328\x1B[0m\x0D
+2020-05-28T16:49:12.173Z DEBUG modem << [00:05:30.034,210] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D\x0A
+2020-05-28T16:49:17.311Z DEBUG modem << [00:05:35.169,982] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T16:49:47.310Z DEBUG modem << [00:06:05.170,166] \x1B[0m<inf> app_main: Current test_index: 369\x1B[0m\x0D
+2020-05-28T16:49:47.317Z DEBUG modem << [00:06:05.179,290] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:49:53.429Z DEBUG modem << [00:06:11.289,001] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:50:23.428Z DEBUG modem << [00:06:41.289,184] \x1B[0m<inf> app_main: Current test_index: 410\x1B[0m\x0D
+2020-05-28T16:50:23.435Z DEBUG modem << [00:06:41.298,309] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:50:29.843Z DEBUG modem << [00:06:47.702,026] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:50:59.846Z DEBUG modem << [00:07:17.702,270] \x1B[0m<inf> app_main: Current test_index: 451\x1B[0m\x0D\x0A
+2020-05-28T16:50:59.853Z DEBUG modem << [00:07:17.711,395] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:51:03.787Z DEBUG modem << [00:07:21.643,035] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:51:33.786Z DEBUG modem << [00:07:51.643,188] \x1B[0m<inf> app_main: Current test_index: 492\x1B[0m\x0D
+2020-05-28T16:51:33.794Z DEBUG modem << [00:07:51.652,313] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:51:40.955Z DEBUG modem << [00:07:58.812,072] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:52:10.954Z DEBUG modem << [00:08:28.812,255] \x1B[0m<inf> app_main: Current test_index: 533\x1B[0m\x0D
+2020-05-28T16:52:10.962Z DEBUG modem << [00:08:28.821,380] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:52:17.031Z DEBUG modem << [00:08:34.887,115] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T16:52:47.028Z DEBUG modem << [00:09:04.887,268] \x1B[0m<inf> app_main: Current test_index: 574\x1B[0m\x0D
+2020-05-28T16:52:47.036Z DEBUG modem << [00:09:04.896,423] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:52:52.140Z DEBUG modem << [00:09:09.998,107] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:53:22.139Z DEBUG modem << [00:09:39.998,260] \x1B[0m<inf> app_main: Current test_index: 615\x1B[0m\x0D
+2020-05-28T16:53:22.146Z DEBUG modem << [00:09:40.007,415] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:53:27.275Z DEBUG modem << [00:09:45.134,094] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:53:57.274Z DEBUG modem << [00:10:15.134,277] \x1B[0m<inf> app_main: Current test_index: 656\x1B[0m\x0D
+2020-05-28T16:53:57.281Z DEBUG modem << [00:10:15.143,463] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:54:03.510Z DEBUG modem << [00:10:21.370,147] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:54:33.509Z DEBUG modem << [00:10:51.370,330] \x1B[0m<inf> app_main: Current test_index: 697\x1B[0m\x0D
+2020-05-28T16:54:33.516Z DEBUG modem << [00:10:51.379,516] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:54:40.781Z DEBUG modem << [00:10:58.642,181] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:55:10.780Z DEBUG modem << [00:11:28.642,333] \x1B[0m<inf> app_main: Current test_index: 738\x1B[0m\x0D
+2020-05-28T16:55:10.787Z DEBUG modem << [00:11:28.651,550] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:55:15.068Z DEBUG modem << [00:11:32.930,175] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:55:45.067Z DEBUG modem << [00:12:02.930,328] \x1B[0m<inf> app_main: Current test_index: 779\x1B[0m\x0D
+2020-05-28T16:55:45.075Z DEBUG modem << [00:12:02.939,544] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D\x0A
+2020-05-28T16:55:51.896Z DEBUG modem << [00:12:09.759,246] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:56:21.895Z DEBUG modem << [00:12:39.759,399] \x1B[0m<inf> app_main: Current test_index: 820\x1B[0m\x0D
+2020-05-28T16:56:21.903Z DEBUG modem << [00:12:39.768,615] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:56:27.030Z DEBUG modem << [00:12:44.894,226] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:56:57.029Z DEBUG modem << [00:13:14.894,409] \x1B[0m<inf> app_main: Current test_index: 861\x1B[0m\x0D\x0A
+2020-05-28T16:56:57.037Z DEBUG modem << [00:13:14.903,656] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:57:02.478Z DEBUG modem << [00:13:20.343,261] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:57:32.477Z DEBUG modem << [00:13:50.343,414] \x1B[0m<inf> app_main: Current test_index: 902\x1B[0m\x0D
+2020-05-28T16:57:32.485Z DEBUG modem << [00:13:50.352,661] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:57:38.765Z DEBUG modem << [00:13:56.630,310] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:58:08.764Z DEBUG modem << [00:14:26.630,462] \x1B[0m<inf> app_main: Current test_index: 943\x1B[0m\x0D\x0A
+2020-05-28T16:58:08.771Z DEBUG modem << [00:14:26.639,739] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:58:13.996Z DEBUG modem << [00:14:31.862,274] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:58:43.995Z DEBUG modem << [00:15:01.862,457] \x1B[0m<inf> app_main: Current test_index: 984\x1B[0m\x0D
+2020-05-28T16:58:44.002Z DEBUG modem << [00:15:01.871,734] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:58:51.289Z DEBUG modem << [00:15:09.156,341] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T16:59:21.288Z DEBUG modem << [00:15:39.156,524] \x1B[0m<inf> app_main: Current test_index: 1025\x1B[0m\x0D\x0A
+2020-05-28T16:59:21.295Z DEBUG modem << [00:15:39.165,832] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T16:59:26.429Z DEBUG modem << [00:15:44.297,393] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T16:59:56.428Z DEBUG modem << [00:16:14.297,576] \x1B[0m<inf> app_main: Current test_index: 1066\x1B[0m\x0D\x0A
+2020-05-28T16:59:56.435Z DEBUG modem << [00:16:14.306,884] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:00:01.642Z DEBUG modem << [00:16:19.511,413] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:00:31.641Z DEBUG modem << [00:16:49.511,596] \x1B[0m<inf> app_main: Current test_index: 1107\x1B[0m\x0D
+2020-05-28T17:00:31.649Z DEBUG modem << [00:16:49.520,935] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:00:40.399Z DEBUG modem << [00:16:58.269,470] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:01:10.398Z DEBUG modem << [00:17:28.269,653] \x1B[0m<inf> app_main: Current test_index: 1148\x1B[0m\x0D
+2020-05-28T17:01:10.406Z DEBUG modem << [00:17:28.278,991] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:01:14.009Z DEBUG modem << [00:17:31.880,493] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:01:44.009Z DEBUG modem << [00:18:01.880,676] \x1B[0m<inf> app_main: Current test_index: 1189\x1B[0m\x0D\x0A
+2020-05-28T17:01:44.016Z DEBUG modem << [00:18:01.890,014] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D\x0A
+2020-05-28T17:01:49.196Z DEBUG modem << [00:18:07.068,420] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:02:19.195Z DEBUG modem << [00:18:37.068,572] \x1B[0m<inf> app_main: Current test_index: 1230\x1B[0m\x0D
+2020-05-28T17:02:19.203Z DEBUG modem << [00:18:37.077,880] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:02:26.315Z DEBUG modem << [00:18:44.187,500] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T17:02:56.314Z DEBUG modem << [00:19:14.187,652] \x1B[0m<inf> app_main: Current test_index: 1271\x1B[0m\x0D\x0A
+2020-05-28T17:02:56.321Z DEBUG modem << [00:19:14.196,990] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:03:01.521Z DEBUG modem << [00:19:19.394,500] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T17:03:31.520Z DEBUG modem << [00:19:49.394,653] \x1B[0m<inf> app_main: Current test_index: 1312\x1B[0m\x0D
+2020-05-28T17:03:31.527Z DEBUG modem << [00:19:49.404,083] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:03:38.176Z DEBUG modem << [00:19:56.050,567] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D\x0A
+2020-05-28T17:04:08.175Z DEBUG modem << [00:20:26.050,720] \x1B[0m<inf> app_main: Current test_index: 1353\x1B[0m\x0D
+2020-05-28T17:04:08.182Z DEBUG modem << [00:20:26.060,119] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:04:13.785Z DEBUG modem << [00:20:31.660,552] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:04:43.784Z DEBUG modem << [00:21:01.660,736] \x1B[0m<inf> app_main: Current test_index: 1394\x1B[0m\x0D\x0A
+2020-05-28T17:04:43.791Z DEBUG modem << [00:21:01.670,135] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:04:48.942Z DEBUG modem << [00:21:06.818,603] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:05:18.941Z DEBUG modem << [00:21:36.818,786] \x1B[0m<inf> app_main: Current test_index: 1435\x1B[0m\x0D
+2020-05-28T17:05:18.948Z DEBUG modem << [00:21:36.828,186] \x1B[0m<dbg> app_coap.transmit_packet: DEV: packet transmitted.\x1B[0m\x0D
+2020-05-28T17:05:26.098Z DEBUG modem << [00:21:43.975,616] \x1B[0m<dbg> app_coap.post_handler: Got response: 2\x1B[0m\x0D
+2020-05-28T17:05:26.106Z DEBUG modem << [00:21:43.975,677] \x1B[1;31m<err> app_main: Error or finished sweep\x1B[0m\x0D\x0A
