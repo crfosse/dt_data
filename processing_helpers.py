@@ -64,20 +64,17 @@ def get_message_energy(n_bytes, max_bytes, reg_coeffs):
     return y[n_bytes]
 
 
-def get_energy(n_bytes,max_bytes,E_cdrx,T_msg,p_sleep,reg_coeffs_t,reg_coeffs_e,start_params,endpoint):
+def get_energy(n_bytes,max_bytes,E_cdrx,T_msg,p_sleep,reg_coeffs_t,reg_coeffs_e,start_params):
     t_psm = T_msg-get_message_duration(n_bytes, max_bytes, reg_coeffs_t)
 
     E_msg = get_message_energy(n_bytes, max_bytes, reg_coeffs_e) #uWh
     E_sleep = p_sleep*t_psm/3600
     E_start = start_params[1]
 
-    t = np.linspace(0,int(endpoint),int(endpoint/0.00025))
-
-
     E_tot_coef = (E_msg+E_cdrx + E_sleep)/(T_msg)
     E_tot_intercept = E_start-E_tot_coef*start_params[0]
 
-    return (t*E_tot_coef + E_tot_intercept)
+    return [E_tot_coef, E_tot_intercept]
 
-def get_con_energy(t_cdrx, t_interval, E_paging, E_disconnect, p_idle):
-    return ((p_idle*t_interval/3600 + E_paging) * t_cdrx/t_interval + E_disconnect)
+def get_con_energy(t_inactive, t_cycle, t_onDuration, E_monitor, E_release, p_idle):
+    return ((p_idle*(t_cycle-t_onDuration)/3600 + E_monitor) * t_inactive/t_cycle + E_release)
