@@ -1,5 +1,9 @@
 
+### This file contains helper functions used in processing ###
+
 import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
 
 from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
@@ -20,28 +24,14 @@ def do_linear_regression(byte_range, sample_list):
             X.append(byte_range[i])
             y.append(sample_list[j][i])
 
-    #Shaping the data to workable arrays
-    X = np.reshape(X, (-1,1))
-    y = np.reshape(y, (-1,1))
+    X_const = sm.add_constant(X)
+    model = sm.OLS(y, X_const)
+    results = model.fit()
+    prediction = results.get_prediction()
 
-    #Dividing the data into 80% training array and 20% test array.
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=0)
+    return results
 
-    regressor = LinearRegression()
-    regressor.fit(X_train, y_train)
-
-    scores = cross_val_score(regressor, X, y, cv=10, scoring='neg_mean_squared_error')
-    print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
-
-    y_pred = regressor.predict(X_test)
-    print('Mean Squared Error:',      metrics.mean_squared_error(y_test, y_pred))  
-    #print('R2 score:',                metrics.r2_score(y_test,y_pred))
-
-    intercept = regressor.intercept_[0]
-    coef = regressor.coef_[0]
-
-    return [coef,intercept]
-
+## Gets the residuals with the given regression coefficients
 def get_residuals(sample_list, reg_coeffs, byte_range):
     y = []
     X = []
@@ -52,23 +42,25 @@ def get_residuals(sample_list, reg_coeffs, byte_range):
             y.append(sample_list[j][i])
 
 
-    y_pred = reg_coeffs[0]*np.array(X)+reg_coeffs[1]
+    y_pred = reg_coeffs.slope*np.array(X)+reg_coeffs.intercept
 
     return [X, y-y_pred]
 
+## Returns the message duration given the regression coefficients
 def get_message_duration(n_bytes, max_bytes, reg_coeffs):
     x = np.linspace(0,max_bytes+1,max_bytes+1)
     y = [reg_coeffs[0]]*x+reg_coeffs[1]
 
     return y[n_bytes]
 
+## Returns the message energy given the regression coefficients
 def get_message_energy(n_bytes, max_bytes, reg_coeffs):
     x = np.linspace(0,max_bytes+1,max_bytes+1)
     y = [reg_coeffs[0]]*x+reg_coeffs[1]
 
     return y[n_bytes]
 
-
+## Returns the coefficients for the estimation of total energy given the model parameters
 def get_energy(n_bytes,max_bytes,E_cdrx,T_msg,p_sleep,reg_coeffs_t,reg_coeffs_e,start_params):
     t_psm = T_msg-get_message_duration(n_bytes, max_bytes, reg_coeffs_t)
 
@@ -81,9 +73,20 @@ def get_energy(n_bytes,max_bytes,E_cdrx,T_msg,p_sleep,reg_coeffs_t,reg_coeffs_e,
 
     return [E_tot_coef, E_tot_intercept]
 
+## Returns an approximation of the cDRX energy
 def get_con_energy(t_inactive, t_cycle, t_onDuration, E_monitor, E_release, p_idle):
     return ((p_idle*(t_cycle-t_onDuration)/3600 + E_monitor) * t_inactive/t_cycle + E_release)
 
+## Returns an array of segments and an array of message durations. Parameter description follows:
+# data             : the measurement data from the OTII
+# batch_start      : an index at some point after the device has 
+#                    entered PSM and before the first test transmission.
+# rrc_con_threshold: given in mA. Used to determine that a transmission is afoot.
+# jump_past        : an value to be added to the start index of segment so that the index
+#                    jumps past a transmission and can begin to iterate backwards to find 
+#                    the end.
+# jump_between     : used to shorten processing time by moving closer to the next
+#                    transmission.
 def segment_data(data, batch_start, rrc_con_threshold, jump_past, jump_between):
     segments = []
     timing = []
@@ -120,4 +123,4 @@ def segment_data(data, batch_start, rrc_con_threshold, jump_past, jump_between):
         timing.append(curr_timing) 
         segments.append(curr_set)
         idx += 1
-    return [segments, timing]
+    return [segments, timing] 
