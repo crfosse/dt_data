@@ -1,5 +1,5 @@
 # dt_data
-Repository for measurement data and processing code
+Repository for the processing code used in my master thesis.
 
 # Processing plans:
 For oscilloscope data we should divide the data into their respective segments and plot these in relation to each other.
